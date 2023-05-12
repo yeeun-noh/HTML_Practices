@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>border, margin, padding</title>
+    <style>
+        /* border을 기준으로 안쪽은 padding, 바깥쪽은 margin */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            /*
+            border-width: 5px;
+            border-style: solid;
+            border-color: red;
+            한줄로 축약가능 :
+            */
+            border: 5px solid red;
+            margin: 20px;
+            padding: 30px;
+            text-align: center;
+        }
+
+        /* id는 #, class는 .붙이기 */
+        #box { 
+            border: 10px solid gold;
+        }
+        .box2 {
+            color: violet;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS</h1>
+    <h1>CSS</h1>
+    <h1 id="box">CSS</h1>
+    (지디넷코리아=이정현 미디어연구소)아이폰 사용자들이 제품을 <span class="box2">얼마나</span> 사용하다 신제품으로 교체하는 지에 대한 조사 결과가 나왔다.
+    IT매체 <span class="box2">나인투파이브맥</span>은 10일(현지시간) 시장조사기관 CIRP의 보고서를 인용해 2019년부터 2023년 미국 아이폰 사용자의 제품 유지 기간에 대한 조사 결과를 보도했다.
+</body>
+</html>
