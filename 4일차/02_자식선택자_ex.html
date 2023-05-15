@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자식선택자 - ex</title>
+    <style>
+        /* ul ul li {
+            color: blueviolet;
+        } */
+
+        /* class 만들어서도 가능: (class 중복가능, '.'사용) */
+        .b {
+            color: pink;
+        }
+        
+        /* id 만들어서도 가능: (id 중복불가능, '#'사용) */
+        #c {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>경기도</li>
+        <ul class="b">
+            <li>수원시</li>
+            <li>화성시</li>
+            <li>평택시</li>
+        </ul>
+        <li class="b">경상북도</li>
+        <li>제주도</li>
+        <lic id="c">전라남도</li>
+    </ul>
+</body>
+</html>

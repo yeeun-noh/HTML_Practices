@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자식선택자</title>
+    <style>
+         /* >가 있다면: 바로 아래 자식만 받아주고, >가 없다면: 바로 아래 자식의 자식까지도 받아줌: */
+        header > h1 {          /*1대 자식 h1만 색 변경*/
+            color: green;
+        }
+        header nav > h1 {      /*2대 자식 h1만 색 변경*/
+            color: red;
+        }
+        header nav div h1 {    /*3대 자식 h1만 색 변경*/
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>월요일1</h1>         <!-- 1대 자식 -->
+        <nav>
+            <h1>월요일2</h1>     <!-- 2대 자식 -->
+            <h2>화요일</h2>
+            <div>
+                <h1>월요일3</h1> <!-- 3대 자식 -->
+            </div>
+        </nav>
+        <h1>월요일4</h1>         <!-- 1대 자식 -->
+        <div>
+            화요일
+        </div>
+    </header>
+</body>
+</html>

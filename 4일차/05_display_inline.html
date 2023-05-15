@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display - inline </title>
+    <style>
+        div {
+            width: 100px; height: 100px;
+            background-color: gold;
+            margin: 10px;
+            display: inline;       /* ==> 옆으로 줄바꿈 없이 출력됨 */
+        /*  display: inline-block; ==> 옆으로 줄바꿈 없이 출력됨 (margin 효과과 있음!)*/
+        }
+        
+        /* div:nth-child(n) : div의 n번쩨 적용 */
+        div:nth-child(1) { background-color: gold; }          /* ==> div의 1번째 적용 */
+        div:nth-child(2) { background-color: tomato; }        /* ==> div의 2번째 적용 */
+        div:nth-child(3) { background-color: paleturquoise; } /* ==> div의 3번째 적용 */
+    </style>
+</head>
+<body>
+    <div>div1</div>
+    <div>div2</div>
+    <div>div3</div>
+</body>
+</html>
